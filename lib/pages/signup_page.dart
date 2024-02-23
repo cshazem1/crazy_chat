@@ -1,6 +1,5 @@
 // ignore_for_file: curly_braces_in_flow_control_structures, use_build_context_synchronously
 
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

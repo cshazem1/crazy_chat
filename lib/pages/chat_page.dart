@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
@@ -117,7 +116,7 @@ class ChatPage extends StatelessWidget {
                               color: kPrimaryColor,
                               onPressed: () {
                                 addMessage(text, friendMessageComponents);
-                                addMessageFreinds(
+                                addMessageFriends(
                                     text, friendMessageComponents);
                                 text = null;
                                 textController.clear();

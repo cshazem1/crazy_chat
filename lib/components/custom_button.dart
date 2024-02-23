@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class CustomButton extends StatelessWidget {
   VoidCallback onClick;
-  bool x = true;
   CustomButton({super.key, required this.text, required this.onClick});
   String text;
   @override

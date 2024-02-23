@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../constants.dart';
 
-void addMessageFreinds(text, friendMessageComponents) {
+void addMessageFriends(text, friendMessageComponents) {
   if (text != null) {
     FirebaseFirestore.instance
         .collection(kUserName)

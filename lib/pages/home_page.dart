@@ -1,4 +1,3 @@
-
 import 'package:crazy_chat/pages/update_profile.dart';
 import 'package:crazy_chat/pages/upload_image.dart';
 import 'package:crazy_chat/pages/users_page.dart';
