@@ -1,5 +1,7 @@
 // ignore_for_file: file_names
 
+import 'dart:developer';
+
 import '../cuibt/details_sign_cuibt/get_location_image_cubit.dart'
     show GetLocationImageCubit;
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -108,10 +110,14 @@ class _ImageUState extends State<ImageU> {
 
     setState(
       () {
-        BlocProvider.of<GetLocationImageCubit>(context)
-            .getImageUpload(xFilePicked!);
+        log(xFilePicked.toString());
+        if(xFilePicked!=null) {
+          BlocProvider.of<GetLocationImageCubit>(context)
+            .getImageUpload(xFilePicked);
+          galleryFile = File(pickedFile!.path);
 
-        galleryFile = File(pickedFile!.path);
+        }
+
       },
     );
   }
